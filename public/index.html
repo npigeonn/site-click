@@ -55,7 +55,6 @@
   </section>
 </body>
 </html> -->
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -154,6 +153,28 @@
       background: #2c8b45;
     }
 
+    .open-app {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .open-app-button {
+      background-color: #5e2ca5;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    .open-app-button:hover {
+      background-color: #431a85;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -161,6 +182,31 @@
       color: #777;
     }
   </style>
+
+  <script>
+    function openClickApp() {
+      const userAgent = navigator.userAgent.toLowerCase();
+      const isAndroid = userAgent.includes("android");
+      const isIOS = userAgent.includes("iphone") || userAgent.includes("ipad");
+
+      const fallbackAppStore = "https://apps.apple.com/app/idXXXXXXXXXX";
+      const fallbackPlayStore = "https://play.google.com/store/apps/details?id=com.nicosss.DWI";
+
+      const scheme = "clickapp://";
+
+      // Essayer d'ouvrir l'app
+      window.location.href = scheme;
+
+      // Fallback vers le store après délai
+      setTimeout(() => {
+        if (isIOS) {
+          window.location.href = fallbackAppStore;
+        } else if (isAndroid) {
+          window.location.href = fallbackPlayStore;
+        }
+      }, 1500);
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -194,6 +240,10 @@
         <img src="https://img.icons8.com/ios-filled/50/ffffff/google-play.png" alt="Google Play" />
         Télécharger sur Google Play
       </a>
+    </div>
+
+    <div class="open-app">
+      <a class="open-app-button" href="#" onclick="openClickApp(); return false;">📲 Ouvrir l’app Click</a>
     </div>
 
     <p style="margin-top: 2rem;">Contact : <a href="mailto:contact@click-france.com">contact@click-france.com</a></p>
