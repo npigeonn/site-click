@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
@@ -53,5 +53,154 @@
 
     <p>Contact : contact@click-france.com</p>
   </section>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Click - Application de Bar</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ece9f0, #ffffff);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #5e2ca5;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #5e2ca5;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .store-buttons a {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .store-buttons a img {
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .apple {
+      background: #000;
+      color: white;
+    }
+
+    .apple:hover {
+      background: #333;
+    }
+
+    .google {
+      background: #34A853;
+      color: white;
+    }
+
+    .google:hover {
+      background: #2c8b45;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Click.</h1>
+    <p>Votre bar, votre application.</p>
+  </header>
+
+  <section>
+    <h2>À propos</h2>
+    <p>
+      <strong>Click est une application mobile pensée pour les bars et leurs clients.</strong><br />
+      En scannant un simple QR code sur leur table, les clients accèdent instantanément au menu, peuvent passer commande et régler en ligne, sans faire la queue.
+      Ils gagnent du temps, bénéficient parfois de remises sur leurs consommations, et profitent d’une expérience fluide et moderne.<br />
+      Côté bar, la plateforme permet de gérer les menus en temps réel, de suivre les commandes en cours, et d’analyser le chiffre d’affaires de façon centralisée et efficace.
+    </p>
+
+    <h2>Fonctionnalités</h2>
+    <ul>
+      <li>Scan QR code pour commander</li>
+      <li>Menu numérique et personnalisé</li>
+      <li>Paiement en ligne avec Stripe</li>
+      <li>Statistiques en temps réel pour les bars</li>
+    </ul>
+
+    <div class="store-buttons">
+      <a href="https://apps.apple.com/app/idXXXXXXXXXX" class="apple" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/mac-os.png" alt="App Store" />
+        Télécharger sur l’App Store
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.nicosss.DWI" class="google" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/google-play.png" alt="Google Play" />
+        Télécharger sur Google Play
+      </a>
+    </div>
+
+    <p style="margin-top: 2rem;">Contact : <a href="mailto:contact@click-france.com">contact@click-france.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Click. Tous droits réservés.
+  </footer>
 </body>
 </html>
